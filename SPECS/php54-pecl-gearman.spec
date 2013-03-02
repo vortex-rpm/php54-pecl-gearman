@@ -11,7 +11,7 @@
 
 Summary: Extension to work with gearmand
 Name: %{php_base}-pecl-gearman
-Version: 1.0.2
+Version: 1.1.0
 Release: 1.vortex%{?dist}
 License: PHP
 Group: Development/Languages
@@ -21,7 +21,7 @@ URL: http://pecl.php.net/package/%{pecl_name}
 Source: http://pecl.php.net/get/%{pecl_name}-%{version}.tgz
 
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
-BuildRequires: %{php_base}-devel, %{php_base}-cli, %{php_base}-pear, libgearman-devel
+BuildRequires: %{php_base}-devel, %{php_base}-cli, %{php_base}-pear, libgearman-devel, libuuid-devel
 Requires(post): %{__pecl}
 Requires(postun): %{__pecl}
 
@@ -89,5 +89,8 @@ fi
 
 
 %changelog
+* Mon Oct 29 2012 Ilya A. Otyutskiy <sharp@thesharp.ru> - 1.1.0-1.vortex
+- Update to 1.1.0.
+
 * Fri Aug 24 2012 Ilya A. Otyutskiy <sharp@thesharp.ru> - 1.0.2-1.vortex
 - Initial release.
