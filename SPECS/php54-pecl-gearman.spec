@@ -11,7 +11,7 @@
 
 Summary: Extension to work with gearmand
 Name: %{php_base}-pecl-gearman
-Version: 1.1.0
+Version: 1.1.1
 Release: 1.vortex%{?dist}
 License: PHP
 Group: Development/Languages
@@ -89,6 +89,9 @@ fi
 
 
 %changelog
+* Tue May 28 2013 Nikolay Yakubitskiy <yakubitskiy@wiw.ru> - 1.1.1-1.vortex
+- Update to 1.1.1.
+
 * Mon Oct 29 2012 Ilya A. Otyutskiy <sharp@thesharp.ru> - 1.1.0-1.vortex
 - Update to 1.1.0.
 
